@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Atlas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Droid Sans Mono', 'Source Code Pro', monospace;
+            background: white;
+            color: black;
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid black;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 14px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid black;
+            margin: 30px 0;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background: black;
+            color: white;
+        }
+
+        body.dark-mode .container {
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        body.dark-mode hr {
+            border-top-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Dark mode toggle button */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            line-height: 1;
+            z-index: 10;
+            transition: transform 0.2s;
+            user-select: none;
+            color: black;
+            display: flex;
+            align-items: center;
+        }
+
+        body.dark-mode .dark-mode-toggle {
+            color: white;
+        }
+
+        .dark-mode-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .dark-mode-toggle:active {
+            transform: scale(0.95);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .dark-mode-toggle {
+                top: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_sun)">
+                <path d="M7 9.5C8.38071 9.5 9.5 8.38071 9.5 7C9.5 5.61929 8.38071 4.5 7 4.5C5.61929 4.5 4.5 5.61929 4.5 7C4.5 8.38071 5.61929 9.5 7 9.5Z" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 0.5V2.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.39999 2.3999L3.81999 3.8199" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M0.5 7H2.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.39999 11.5999L3.81999 10.1799" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 13.5V11.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.6 11.5999L10.18 10.1799" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.5 7H11.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.6 2.3999L10.18 3.8199" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_sun">
+                    <rect width="14" height="14" fill="white"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <g clip-path="url(#clip0_moon)">
+                <path d="M12 10.48C10.8383 10.4729 9.69946 10.157 8.70014 9.56463C7.70083 8.97228 6.87703 8.12482 6.31321 7.10913C5.7494 6.09345 5.46585 4.94609 5.49164 3.78469C5.51743 2.6233 5.85164 1.48965 6.45999 0.5C4.85717 0.781382 3.41649 1.64934 2.41859 2.9348C1.42069 4.22026 0.937035 5.83116 1.06185 7.4537C1.18666 9.07624 1.91099 10.5942 3.09375 11.7119C4.27651 12.8297 5.83299 13.4671 7.45999 13.5C8.57312 13.5028 9.66809 13.218 10.6387 12.6731C11.6094 12.1282 12.4228 11.3418 13 10.39C12.6693 10.4446 12.3351 10.4747 12 10.48V10.48Z" stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_moon">
+                    <rect width="14" height="14" fill="white"/>
+                </clipPath>
+            </defs>
+        </svg>
+    </button>
+
+    <div class="container">
+        <h1>Privacy Policy for Atlas</h1>
+        <p class="last-updated"><strong>Last Updated: January 25, 2026</strong></p>
+
+        <h2>Introduction</h2>
+        <p>Atlas ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard information when you use the Atlas app.</p>
+
+        <h2>Information We Collect</h2>
+
+        <h3>Usage Data</h3>
+        <p>We collect anonymous usage data to improve the Atlas experience. This includes:</p>
+        <ul>
+            <li>Quiz performance and scores</li>
+            <li>Questions answered and topics completed</li>
+            <li>App features used and interaction patterns</li>
+            <li>Session duration and frequency of use</li>
+            <li>Device type and operating system version</li>
+        </ul>
+        <p>This usage data is collected through analytics services and helps us understand how players engage with Atlas, which topics are most popular, and how we can improve the daily quiz experience.</p>
+
+        <h3>Data Not Linked to You</h3>
+        <p>All usage data collected is <strong>not linked to your personal identity</strong>. We do not collect:</p>
+        <ul>
+            <li>Your name or email address (unless you create an account)</li>
+            <li>Contact information</li>
+            <li>Location data beyond country-level for global comparisons</li>
+            <li>Personal identifiers that can trace data back to you individually</li>
+        </ul>
+
+        <h3>Data Used to Track You</h3>
+        <p>We use anonymized usage data for cross-app tracking purposes, which means:</p>
+        <ul>
+            <li>Data may be shared with third-party analytics providers to understand app performance</li>
+            <li>This data is aggregated and cannot identify you personally</li>
+            <li>It helps us measure advertising effectiveness if we run promotional campaigns</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use the collected usage data to:</p>
+        <ul>
+            <li>Improve the Atlas quiz experience and question quality</li>
+            <li>Understand which geography topics are most engaging</li>
+            <li>Identify and fix technical issues</li>
+            <li>Analyze overall app performance and user engagement</li>
+            <li>Generate anonymized, aggregated statistics about global player performance</li>
+        </ul>
+
+        <h2>Score Comparison and Leaderboards</h2>
+        <p>When you compare your scores with friends or view global player performance:</p>
+        <ul>
+            <li>Scores are displayed in aggregate form</li>
+            <li>Individual performance data is anonymized</li>
+            <li>We do not share personally identifiable information with other players</li>
+            <li>Comparisons are based on quiz results only, not personal data</li>
+        </ul>
+
+        <h2>Data Sharing</h2>
+        <p>We do not sell your personal information. We may share anonymized usage data with:</p>
+        <ul>
+            <li>Analytics service providers (e.g., App Store analytics, third-party analytics tools)</li>
+            <li>Service providers who help us operate and improve Atlas</li>
+        </ul>
+        <p>These third parties are required to protect your information and use it only for the purposes we specify.</p>
+
+        <h2>Data Retention</h2>
+        <p>Usage data is retained for as long as necessary to improve the app and provide the daily quiz experience. Anonymized, aggregated data may be retained indefinitely for analytical purposes.</p>
+
+        <h2>Your Rights</h2>
+        <p>Depending on your location, you may have rights to:</p>
+        <ul>
+            <li>Request information about data we've collected</li>
+            <li>Request deletion of your data</li>
+            <li>Opt out of certain data collection practices</li>
+            <li>Access and correct your information</li>
+        </ul>
+        <p>To exercise these rights, contact us at [your contact email].</p>
+
+        <h2>Children's Privacy</h2>
+        <p>Atlas does not knowingly collect personal information from children under 13. The app is designed for general audiences interested in geography.</p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy.</p>
+
+        <h2>Third-Party Services</h2>
+        <p>Atlas may use third-party services for analytics and app functionality. These services have their own privacy policies:</p>
+        <ul>
+            <li>[List any specific third-party services you use, such as Firebase, Amplitude, etc.]</li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <p>If you have questions about this Privacy Policy or how we handle your data, please contact us at:</p>
+        <p>[Your contact email]<br>
+        [Optional: Your company address]</p>
+
+        <h2>Compliance</h2>
+        <p>This Privacy Policy complies with:</p>
+        <ul>
+            <li>Apple App Store privacy requirements</li>
+            <li>General Data Protection Regulation (GDPR) where applicable</li>
+            <li>California Consumer Privacy Act (CCPA) where applicable</li>
+            <li>Other relevant privacy laws and regulations</li>
+        </ul>
+
+        <hr>
+
+        <p>By using Atlas, you agree to this Privacy Policy. If you do not agree, please do not use the app.</p>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            const isDark = body.classList.toggle('dark-mode');
+
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+
+            if (isDark) {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        }
+
+        // Check for saved dark mode preference on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedMode = localStorage.getItem('darkMode');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedMode === 'enabled' || (!savedMode && prefersDark)) {
+                document.body.classList.add('dark-mode');
+                document.querySelector('.sun-icon').style.display = 'none';
+                document.querySelector('.moon-icon').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
